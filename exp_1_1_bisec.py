@@ -5,6 +5,7 @@ def f(x):
     return x ** 3 + x - 1
 
 
+# 二分法逼近
 def bisec(f, a, b, tol):
     if np.sign(f(a)) * np.sign(f(b)) >= 0:
         print("f(a)*f(b)<0 isn't satisfied")
