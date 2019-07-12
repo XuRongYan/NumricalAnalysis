@@ -12,7 +12,6 @@ def f(x):
     return res - 2e-12 * x ** 15
 
 
-
 if __name__ == '__main__':
     ans = bisect(f, 14.5, 15.1)
     print(ans, 2e-12 * 15 ** 15 / math.factorial(14))
