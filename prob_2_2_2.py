@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def lu_factorization(A, b) :
     L = np.identity(A.shape[0])
     U = A
