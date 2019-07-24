@@ -30,9 +30,9 @@ def lu_factorization(A, b) :
 
 
 if __name__ == '__main__':
-    A = np.array([[3, 1, 2],
-                  [6, 3, 4],
-                  [3, 1, 5]])
+    A = np.array([[4, -2, 2],
+                  [-2, 2, -4],
+                  [2, -4, 11]])
     b = np.array([0, 1, 2])
     x = lu_factorization(A, b)
     print("x=", x, "Ax", A.dot(x.transpose()))
