@@ -9,7 +9,7 @@ def gaussian_eliminate(a, b):
             exit(-1)
         for j in range(i + 1, a.shape[0]):
             multi = a[j, i] / a[i, i]
-            for k in range(j + 1, a.shape[0]):
+            for k in range(j, a.shape[0]):
                 a[j, k] -= multi * a[i, k]
             b[j] -= multi * b[i]
     print("a=", a)
